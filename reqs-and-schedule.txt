@@ -1,0 +1,80 @@
+***REQS***
+
+Your app must be a working, interactive, React application.
+    *It must only use React for DOM manipulation.
+    *It must not produce errors or console logs when used.
+    *It must not display any non-functional actions (e.g., buttons or links that do not work).
+    *It must not be dependent upon or cause the page to refresh (it must be an SPA).
+    *It must include at least two interactive features (e.g., the user can switch views to see more detail).
+    *It must not contain any JavaScript alerts.
+    It should be free from extraneous create-react-app files or code. Specifically, you should remove the preloaded logo.svg and unused App.css style declarations.
+
+It must include data from a third-party API.
+    *It must contain at least one request to an API.
+    *You must use an environment variable to store any API keys if keys are required to make requests to the API you choose. (see Storing API Keys Outside of Github)
+    *Your API requests must be made over https. Not all APIs support https (most do). Make sure that the API you use has a url that begins with https:// not http://. Read about why
+    *Each request must handle errors by displaying a message to the user and must not log the error to the console.
+    *The data returned from the API must be used in the application.
+
+It must use at least 4 separate components.
+    It may use class-based components or hooks for stateful components.
+    *It must use stateless (function) and stateful (class) components appropriately.
+
+It must be deployed to the Web.
+    *It must be accessible as an application on the Web. (see Deploying React Apps on Heroku)
+    *It must separately have a public GitHub repository containing your code.
+    *You must not commit your API keys to Github. (see Storing API Keys Outside of Github)
+
+It uses flexbox or CSS grid for layout and not floats.
+    *It must not use floats for layout or depend solely upon positioning elements with fixed or absolute position.
+    It may incorporate a component library or styling framework.
+
+Your project repository must adequately document your project and include a line to the deployed app.
+    *Your Github repository must contain a brief description and link to the deployed application in the "website" section at the top of the Code tab.
+    *Your Github repository must contain a README.md file for documentation that is properly formatted using Github flavored markdown.
+    *Your Github repository README.md must include the following sections:
+        *Description: Describe at a high level what your project is and the motivation for the project (i.e., what problem(s) your projects solves) and includes a screenshot of the application in the browser.
+        *Technologies Used: A list of the languages, libraries and frameworks used in your application.
+        *Getting Started/Installation Instructions: This would likely describe how to use the application and the steps to fork, clone and run the application.
+        *Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
+
+You have used git for version control throughout the project.
+    *Your project must contain frequent, cohesive commits dating back to the first day of the project week. Aim for at least 30 commits.
+
+Use React Router for navigation (as needed).
+    If your app has navigation features, it must use React Router for the navigation.
+    It should not depend solely on the browser's navigation buttons.
+
+***SCHEDULE***
+
+Thursday 9/9:
+Outline project idea. x
+Create repo and clone. x
+Create React app. x
+Plot out time and requirements. x
+Create user stories.
+Create 1-2 basic wireframes.
+Draft and submit project proposal. 
+
+Friday 9/10:
+Scaffold app and all components.
+Create routes and links.
+Implement API call and error handling.
+By end of day, have all villagers view page and individual villager view pages working with information from API calls.
+
+Saturday 9/11:
+Implement state for villager components to allow for "friending" and/or "unfriending."
+
+Sunday 9/12:
+Create component and implement state for viewing your villager "friends."
+
+Monday 9/13:
+Judge from time remaining at this point whether to create mobile and desktop layouts or just desktop. 
+Add styling. 
+Implement reach goals, if time allows.
+
+Tuesday 9/14: Resolve any remaining issues. Deploy to Heroku. Complete the README file. Prepare for presentation.
+
+***PROJECT OUTLINE***
+An ACNH villager “Facebook” with details about all of them, using this API: http://acnhapi.com/doc#tag/Villagers
+Include search functionality to find specific villagers by name. Include functionality to allow for filtering of results by species or personality type.  Include something in state that allows you to click on a villager’s card and “friend” them. Include something in state that shows your friends/residents on the page. Maybe call the app “ACNHBook” or “FaceNook”?
