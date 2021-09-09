@@ -52,11 +52,12 @@ Outline project idea. x
 Create repo and clone. x
 Create React app. x
 Plot out time and requirements. x
-Create user stories.
-Create 1-2 basic wireframes.
-Draft and submit project proposal. 
+Create user stories. x
+Create 1-2 basic wireframes. x
+Draft and submit project proposal. x
 
 Friday 9/10:
+Remove extraneous files created by create-react-app.
 Scaffold app and all components.
 Create routes and links.
 Implement API call and error handling.
@@ -69,12 +70,16 @@ Sunday 9/12:
 Create component and implement state for viewing your villager "friends."
 
 Monday 9/13:
-Judge from time remaining at this point whether to create mobile and desktop layouts or just desktop. 
+Judge from time remaining at this point whether to create mobile and desktop layouts or just mobile.
 Add styling. 
-Implement reach goals, if time allows.
+Implement any other stretch goals from proposal, if time allows.
 
 Tuesday 9/14: Resolve any remaining issues. Deploy to Heroku. Complete the README file. Prepare for presentation.
 
 ***PROJECT OUTLINE***
-An ACNH villager “Facebook” with details about all of them, using this API: http://acnhapi.com/doc#tag/Villagers
+An ACNH villager “Facebook” with details about all villagers, using this API: http://acnhapi.com/doc#tag/Villagers
 Include search functionality to find specific villagers by name. Include functionality to allow for filtering of results by species or personality type.  Include something in state that allows you to click on a villager’s card and “friend” them. Include something in state that shows your friends/residents on the page. Maybe call the app “ACNHBook” or “FaceNook”?
+
+
+leaf icon: https://lh4.googleusercontent.com/proxy/P_I1uVkx3sOaNlJWO8R7JsaX3uCkWJlhQ85phwR7deKrCXFIyBxVBIFjkWuYq2n0_LwE9AKekkrVGF0nT4Vex41AbA=s0-d
+
