@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Thumbnail() {
+export default function Thumbnail(props) {
+    const villager = props.villager
+    console.log(villager)
     return (
         <div>
-            <h3>thumbnail</h3>
+            <img src={villager['icon_uri']} />
+            <h3>{villager.name['name-USen']}</h3>
         </div>
     )
 }

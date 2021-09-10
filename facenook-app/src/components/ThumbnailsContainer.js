@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Thumbnail from './Thumbnail'
 
-export default function ThumbnailsContainer() {
+export default function ThumbnailsContainer(props) {
+    const villagers = props.villagers
+    console.log(villagers)
     return (
         <div>
-            <h2>thumbnails container</h2>
-            <Thumbnail />
-            <Thumbnail />
+            {
+                villagers.map((villager, idx) => {
+                    return (
+                        <Thumbnail villager={villager} key={idx} />
+                    )
+                })
+            }
         </div>
     )
 }
