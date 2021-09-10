@@ -57,14 +57,15 @@ Create 1-2 basic wireframes. x
 Draft and submit project proposal. x
 
 Friday 9/10:
-Remove extraneous files created by create-react-app.
-Scaffold app and all components.
-Create routes and links.
-Implement API call and error handling.
-By end of day, have all villagers view page and individual villager view pages working with information from API calls.
+Remove extraneous files created by create-react-app. x
+Scaffold app and all components. x
+Create routes x and links x
+Implement API call. x
+By end of day, have all villagers view page and individual villager view pages working with information from API calls. x
+Implement error handling for API call. x
 
 Saturday 9/11:
-Implement state for villager components to allow for "friending" and/or "unfriending."
+Implement state for villager components to allow for "friending" and/or "unfriending." 
 
 Sunday 9/12:
 Create component and implement state for viewing your villager "friends."

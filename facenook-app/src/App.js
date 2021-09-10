@@ -13,7 +13,6 @@ function App() {
       <Route exact path="/" component={Header} />
       <Route exact path="/"> <ThumbnailsContainer /> </Route>
       {/* ----detail view----*/}
-      <Route path="/:id" component={Nav} />
       <Route path="/:id" component={VillagerDetail} />
 
     </div>

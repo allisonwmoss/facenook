@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Nav from './Nav'
 
 export default function VillagerDetail(props) {
     const villager = props.location.state.villager.villager
+    const homepageVillagers = props.location.state.homepageVillagers
+    console.log(homepageVillagers)
     return (
         <div>
+            <Nav homepageVillagers={homepageVillagers} />
             <img src={villager['image_uri']} alt={villager.name['name-USen']} />
             <h1>{villager.name['name-USen']}</h1>
             <h2>{villager.species}</h2>

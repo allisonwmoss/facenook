@@ -25,9 +25,7 @@ export default function AllThumbnails(props) {
             {
                 thumbnailVillagers.map((villager, idx) => {
                     return (
-                        // <Link to={`/${villager.id}`} key={idx}>
-                        <Thumbnail villager={villager} key={idx} />
-                        // </Link>
+                        <Thumbnail villager={villager} key={idx} thumbnailVillagers={thumbnailVillagers} />
                     )
                 })
             }

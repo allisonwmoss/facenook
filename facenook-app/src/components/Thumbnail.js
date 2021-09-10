@@ -8,7 +8,8 @@ export default function Thumbnail(props) {
         <Link to={{
             pathname: `/${villager.id}`,
             state: {
-                villager: { villager }
+                villager: { villager },
+                homepageVillagers: props.thumbnailVillagers
             }
         }}>
             <div>
