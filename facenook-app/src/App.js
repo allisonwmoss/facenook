@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Header from "./components/Header";
 import Nav from './components/Nav';
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 import ThumbnailsContainer from "./components/ThumbnailsContainer";
 import VillagerDetail from './components/VillagerDetail';
 import Copyright from './components/Copyright';
 import Error from './components/Error';
+import SearchResult from './components/SearchResult';
 
 function App() {
 
@@ -17,9 +18,9 @@ function App() {
       <Route exact path="/"> <Copyright /> </Route>
       {/* ----detail view----*/}
       <Route path="/:id" component={VillagerDetail} />
-      {/* ----error handler---- */}
-      <Route exact path="/error" component={Error} />
-      <Route exact path="/search"></Route>
+      <Route path="/error">
+        <Redirect to="/"></Redirect>
+      </Route>
     </div>
   );
 }

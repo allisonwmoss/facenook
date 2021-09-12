@@ -7,30 +7,20 @@ export default function SearchForm(props) {
     const [waitSearchString, setWaitSearchString] = useState('')
     const villagers = props.villagers
 
-    // function findVillager(searchString) {
-    //     console.log(searchString)
-    //     const valuesArr = Object.values(villagers)
-    //     const matchingVillager = valuesArr.find(villager =>
-    //         villager.name['name-USen'] === searchString
-    //     )
-    //     console.log(matchingVillager)
-    // }
     function handleChange(e) {
         setWaitSearchString(e.target.value)
     }
     function handleSubmit(e) {
         e.preventDefault()
         setSearchString(waitSearchString)
-        // findVillager(searchString)
-        // setSearchString('')
     }
     return (
         <form>
             <label htmlFor="search-input">Find villager by name:</label>
             <input type="text" value={waitSearchString} onChange={e => handleChange(e)} id="search-input"></input>
-            <Link to="/search" onClick={e => handleSubmit(e)}>Search
-                {/* <button onClick={e => handleSubmit(e)}>search</button> */}
-            </Link>
+            {/* <Link to="/search" onClick={e => handleSubmit(e)}>Search */}
+            <button onClick={e => handleSubmit(e)}>search</button>
+            {/* </Link> */}
         </form>
 
     )
