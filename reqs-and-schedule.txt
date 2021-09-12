@@ -64,10 +64,10 @@ Implement API call. x
 By end of day, have all villagers view page and individual villager view pages working with information from API calls. x
 Implement error handling for API call. x
 
-Saturday 9/11:
-Implement state for villager components to allow for "friending" and/or "unfriending." 
-
 Sunday 9/12:
+Create AC copyright component. x
+Create search capability to find specific villagers by name.
+Implement state for villager components to allow for "friending" and/or "unfriending." 
 Create component and implement state for viewing your villager "friends."
 
 Monday 9/13:

@@ -3,3 +3,4 @@
 
 2. This solution for finding one nested item in an object using one of its properties was inspired in part by comments by Ibrahim Mahrir and Dacre Denny on this StackOverflow question: https://stackoverflow.com/questions/53696986/find-nested-object-that-contains-a-value . 
 
+3. A major thank you to Alexis of ACNH API for the free API used in this project: http://acnhapi.com/doc/. 
