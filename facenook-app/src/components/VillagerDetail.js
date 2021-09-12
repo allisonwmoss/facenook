@@ -3,8 +3,13 @@ import Nav from './Nav'
 
 export default function VillagerDetail(props) {
     console.log(props)
-    const villager = props.location.state.villager.villager
-    if (villager) {
+    if (!props.location.state) {
+        return (
+            <div></div>
+        )
+    }
+    else {
+        const villager = props.location.state.villager.villager
         console.log(villager)
         return (
             <div>
@@ -19,10 +24,6 @@ export default function VillagerDetail(props) {
                 <h4>Quote:</h4>
                 <p>"{villager.saying}"</p>
             </div>
-        )
-    } else {
-        return (
-            <div></div>
         )
     }
 }
