@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Nav from './Nav'
 
 export default function VillagerDetail(props) {
-    if (props.villager) {
-        const villager = props.location.state.villager.villager
+    console.log(props)
+    const villager = props.location.state.villager.villager
+    if (villager) {
+        console.log(villager)
         return (
             <div>
                 <Nav />
@@ -23,5 +25,4 @@ export default function VillagerDetail(props) {
             <div></div>
         )
     }
-
 }
