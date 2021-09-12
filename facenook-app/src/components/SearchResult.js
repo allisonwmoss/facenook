@@ -4,7 +4,12 @@ import Error from './Error'
 import { Link } from 'react-router-dom'
 
 export default function SearchResult(props) {
-    const searchString = props.searchString
+    let searchString = props.searchString
+    //convert any search string to lowercase with uppercased first letter
+    //See Footnote 4----
+    searchString = searchString.toLowerCase();
+    searchString = searchString.charAt(0).toUpperCase() + searchString.slice(1)
+
     const villagers = props.villagers
     const valuesArr = Object.values(villagers)
     const matchingVillager = valuesArr.find(villager =>
@@ -13,7 +18,6 @@ export default function SearchResult(props) {
     if (!matchingVillager) {
         return (
             <Error reason="no-match" />
-
         )
     }
 

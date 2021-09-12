@@ -66,14 +66,12 @@ Implement error handling for API call. x
 
 Sunday 9/12:
 Create AC copyright component. x
-Create search capability to find specific villagers by name.
-Implement state for villager components to allow for "friending" and/or "unfriending." 
-Create component and implement state for viewing your villager "friends."
+Create search capability to find specific villagers by name. x
 
 Monday 9/13:
 Judge from time remaining at this point whether to create mobile and desktop layouts or just mobile.
 Add styling. 
-Implement any other stretch goals from proposal, if time allows.
+Implement any other stretch goals from proposal, if time allows (friending, unfriending, viewing friends).
 
 Tuesday 9/14: Resolve any remaining issues. Deploy to Heroku. Complete the README file. Prepare for presentation.
 
