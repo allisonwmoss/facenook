@@ -34,7 +34,7 @@ export default function ThumbnailsContainer(props) {
 
     return (
         <div>
-            <SearchForm searchString={searchString} setSearchString={setSearchString} />
+            <SearchForm searchString={searchString} setSearchString={setSearchString} villagers={villagers} />
             <AllThumbnails villagers={villagers} />
         </div>
     )
