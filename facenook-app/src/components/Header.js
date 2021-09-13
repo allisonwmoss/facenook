@@ -24,7 +24,7 @@ export default function Header() {
     return (
         <HeaderDiv>
             <h1>facenook</h1>
-            <Img src="https://lh4.googleusercontent.com/proxy/P_I1uVkx3sOaNlJWO8R7JsaX3uCkWJlhQ85phwR7deKrCXFIyBxVBIFjkWuYq2n0_LwE9AKekkrVGF0nT4Vex41AbA=s0-d" />
+            <Img src="https://i.imgur.com/286VAPQ.png" />
         </HeaderDiv>
     )
 }

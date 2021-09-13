@@ -4,17 +4,18 @@ import styled from 'styled-components'
 
 const StyledForm = styled.form`
     padding: 10px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     display: flex;
     flex-direction: row;
     align-items:flex-end;
-    justify-content:space-around;
+    justify-content:space-between;
 `
 
 const StyledButton = styled.button`
     background-color: #00adef;
     font-size: 1em;
     height: 1.3em;
+    width: 20%;
     margin: 5px;
     color: white;
     border: 1px solid #00adef;
@@ -30,12 +31,13 @@ const StyledButton = styled.button`
 
 const StyledInput = styled.input`
     height: 1.8em;
-    width: 8em;
+    width: 75%;
     margin: 5px;
 `
 
 const StyledLabel = styled.label`
 margin: 5px;
+width: 20%;
 `
 
 export default function SearchForm(props) {
@@ -54,7 +56,7 @@ export default function SearchForm(props) {
     return (
         <StyledForm>
             <StyledLabel
-                htmlFor="search-input">Find villager by name:
+                htmlFor="search-input">Find a villager
             </StyledLabel>
             <StyledInput
                 type="text" value={waitSearchString} onChange={e => handleChange(e)} id="search-input">

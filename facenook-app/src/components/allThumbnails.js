@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import Thumbnail from './Thumbnail'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const ThumbnailsDiv = styled.div`
+margin-top: 50px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+`
 
 export default function AllThumbnails(props) {
     const villagers = props.villagers
@@ -21,7 +30,7 @@ export default function AllThumbnails(props) {
     }, [])
 
     return (
-        <div>
+        <ThumbnailsDiv>
             {
                 thumbnailVillagers.map((villager, idx) => {
                     return (
@@ -29,6 +38,6 @@ export default function AllThumbnails(props) {
                     )
                 })
             }
-        </div>
+        </ThumbnailsDiv>
     )
 }
