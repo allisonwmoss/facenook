@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 const HeaderDiv = styled.div`
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     font-weight: bolder;
@@ -12,19 +11,24 @@ const HeaderDiv = styled.div`
     margin: 0;
     padding: 10px 30px;
     font-size: 1.7em;
+    width: 100%;
 `
 
 const Img = styled.img`
 width: 30%;
 height: 50%;
+max-width: 300px;
 padding: 5px;
 `
 
 export default function Header() {
     return (
-        <HeaderDiv>
-            <h1>facenook</h1>
-            <Img src="https://i.imgur.com/286VAPQ.png" />
-        </HeaderDiv>
+        <Link to={'/'}>
+            <HeaderDiv>
+                <h1>facenook</h1>
+                <Img src="https://i.imgur.com/286VAPQ.png" />
+            </HeaderDiv>
+        </Link>
+
     )
 }

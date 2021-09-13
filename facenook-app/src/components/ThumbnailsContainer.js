@@ -8,11 +8,11 @@ import SearchResult from './SearchResult';
 const axios = require('axios').default
 
 const LoadingBeachballEffect = keyframes`
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
+     from {
+         transform: rotate(0deg)
+             }
+     to {
+         transform: rotate(360deg)
     }
 `
 
@@ -31,8 +31,8 @@ justify-content: center;
 const Container = styled.div`
 display: flex;
 flex-direction: column;
-/* align-items: center;
-justify-content: center; */
+align-items: center;
+justify-content: center;
 `
 
 export default function ThumbnailsContainer(props) {

@@ -10,3 +10,9 @@ a, a:visited {
   text-decoration: none;
   /* color: white; */
 }
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
