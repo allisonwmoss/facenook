@@ -9,6 +9,8 @@ margin-bottom: 20px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 `
 
 export default function AllThumbnails(props) {
@@ -18,7 +20,7 @@ export default function AllThumbnails(props) {
         //See Footnote 2-------------------------------
         const valuesArr = Object.values(villagers)
         let newThumbnailVillagers = []
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 8; i++) {
             const randomId = Math.ceil(Math.random() * 391)
             const matchingVillager = valuesArr.find(villager =>
                 villager.id === randomId
