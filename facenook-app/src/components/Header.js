@@ -15,15 +15,17 @@ const HeaderDiv = styled.div`
 `
 
 const Img = styled.img`
-width: 30%;
-height: 50%;
-max-width: 300px;
+max-width: 200px;
+margin: 0px 50px;
+/* width: 30%;
+height: 50%; */
+/* max-width: 200px; */
 padding: 5px;
 `
 
 export default function Header() {
     return (
-        <Link to={'/'}>
+        <Link to={'/redirect'}>
             <HeaderDiv>
                 <h1>facenook</h1>
                 <Img src="https://i.imgur.com/286VAPQ.png" />

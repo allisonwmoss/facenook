@@ -9,6 +9,7 @@ const StyledForm = styled.form`
     flex-direction: row;
     align-items:flex-end;
     justify-content:space-between;
+    background-color: #eb0081;
 `
 
 const StyledButton = styled.button`
@@ -25,7 +26,7 @@ const StyledButton = styled.button`
     justify-content: center;
     align-items: center;
     &:hover{
-        background-color: #eb0081;
+        background-color: #5ce1e6;
     }
 `
 

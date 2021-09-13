@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Nav from './Nav'
 import styled, { keyframes, withTheme } from 'styled-components'
 import Header from './Header'
 
@@ -61,12 +60,9 @@ export default function VillagerDetail(props) {
             padding: '0px 30px',
             display: 'flex',
             flexDirection: 'column',
-            // marginBottom: 0,
         }
         return (
             <div>
-                <Header>
-                </Header>
                 <ContainerDiv>
                     <VillagerDiv
                         style={cardStyle}

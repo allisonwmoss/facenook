@@ -1,6 +1,15 @@
 import React from 'react'
 import Thumbnail from './Thumbnail'
 import Error from './Error'
+import styled from 'styled-components'
+
+const ContainerDiv = styled.div`
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
 
 export default function SearchResult(props) {
     let searchString = props.searchString
@@ -21,6 +30,9 @@ export default function SearchResult(props) {
     }
 
     return (
-        <Thumbnail villager={matchingVillager} />
+        <ContainerDiv>
+            <h2>Results for '{searchString}'</h2>
+            <Thumbnail villager={matchingVillager} />
+        </ContainerDiv>
     )
 }

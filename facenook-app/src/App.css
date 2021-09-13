@@ -11,8 +11,11 @@ a, a:visited {
   /* color: white; */
 }
 
-#root{
+/* #root{
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+.debug {
+  border: 5px solid black;
 }

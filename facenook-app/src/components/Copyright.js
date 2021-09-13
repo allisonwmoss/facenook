@@ -1,9 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const CopyrightBlock = styled.div`
+    margin: 10px;
+`
 
 export default function Copyright() {
     return (
-        <div>
+        <CopyrightBlock>
             <p>Animal Crossing &copy; 2001-2021, Nintendo.</p>
-        </div>
+        </CopyrightBlock>
     )
 }

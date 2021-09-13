@@ -28,13 +28,6 @@ align-items: center;
 justify-content: center;
 `
 
-const Container = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-`
-
 export default function ThumbnailsContainer(props) {
 
     const [isLoading, setLoading] = useState(true);
@@ -73,10 +66,10 @@ export default function ThumbnailsContainer(props) {
     }
 
     return (
-        <Container>
+        <div>
             <SearchForm searchString={searchString} setSearchString={setSearchString} villagers={villagers} />
             <AllThumbnails villagers={villagers} />
-        </Container>
+        </div>
     )
     //--------
 
