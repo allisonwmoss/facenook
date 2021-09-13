@@ -69,14 +69,8 @@ Create AC copyright component. x
 Create search capability to find specific villagers by name. x
 
 Monday 9/13:
-Judge from time remaining at this point whether to create mobile and desktop layouts or just mobile.
-Add styling. 
+Add styling. x
 Implement any other stretch goals from proposal, if time allows (friending, unfriending, viewing friends).
-
-    *STANDUP*
-    -Built out the MVP of my app, plus a bonus feature. Ran into some issues with my routes and error handling, but was able to find some workarounds to resolve them.
-    -Now I'm working on styling.
-    -If I'm able to accomplish the styling faster than expected, I might add another bonus feature (friending/unfriending/viewing friends).
 
 Tuesday 9/14: Resolve any remaining issues. Deploy to Heroku. Complete the README file. Prepare for presentation.
 
