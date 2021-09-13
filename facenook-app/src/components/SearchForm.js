@@ -1,5 +1,42 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const StyledForm = styled.form`
+    padding: 10px;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content:space-around;
+`
+
+const StyledButton = styled.button`
+    background-color: #00adef;
+    font-size: 1em;
+    height: 1.3em;
+    margin: 5px;
+    color: white;
+    border: 1px solid #00adef;
+    border-radius: 8%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #eb0081;
+    }
+`
+
+const StyledInput = styled.input`
+    height: 1.8em;
+    width: 8em;
+    margin: 5px;
+`
+
+const StyledLabel = styled.label`
+margin: 5px;
+`
 
 export default function SearchForm(props) {
     const searchString = props.searchString
@@ -15,13 +52,21 @@ export default function SearchForm(props) {
         setSearchString(waitSearchString)
     }
     return (
-        <form>
-            <label htmlFor="search-input">Find villager by name:</label>
-            <input type="text" value={waitSearchString} onChange={e => handleChange(e)} id="search-input"></input>
+        <StyledForm>
+            <StyledLabel
+                htmlFor="search-input">Find villager by name:
+            </StyledLabel>
+            <StyledInput
+                type="text" value={waitSearchString} onChange={e => handleChange(e)} id="search-input">
+
+            </StyledInput>
             {/* <Link to="/search" onClick={e => handleSubmit(e)}>Search */}
-            <button onClick={e => handleSubmit(e)}>search</button>
+            <StyledButton
+                onClick={e => handleSubmit(e)}>
+                search
+            </StyledButton>
             {/* </Link> */}
-        </form>
+        </StyledForm>
 
     )
 }

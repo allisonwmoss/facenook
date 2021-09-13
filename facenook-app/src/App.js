@@ -7,10 +7,18 @@ import VillagerDetail from './components/VillagerDetail';
 import Copyright from './components/Copyright';
 import Error from './components/Error';
 import SearchResult from './components/SearchResult';
+import styled from 'styled-components';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
 
 function App() {
   return (
-    <div>
+    <AppContainer>
       {/* ----homepage----- */}
       <Route exact path="/" component={Header} />
       <Route exact path="/"> <ThumbnailsContainer /> </Route>
@@ -20,7 +28,7 @@ function App() {
       <Route path="/error">
         <Redirect to="/"></Redirect>
       </Route>
-    </div>
+    </AppContainer>
   )
 
 }
