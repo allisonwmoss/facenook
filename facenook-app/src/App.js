@@ -9,7 +9,6 @@ import Error from './components/Error';
 import SearchResult from './components/SearchResult';
 
 function App() {
-
   return (
     <div>
       {/* ----homepage----- */}
@@ -22,7 +21,8 @@ function App() {
         <Redirect to="/"></Redirect>
       </Route>
     </div>
-  );
+  )
+
 }
 
 export default App;

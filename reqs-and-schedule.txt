@@ -73,12 +73,16 @@ Judge from time remaining at this point whether to create mobile and desktop lay
 Add styling. 
 Implement any other stretch goals from proposal, if time allows (friending, unfriending, viewing friends).
 
+    *STANDUP*
+    -Built out the MVP of my app, plus a bonus feature. Ran into some issues with my routes and error handling, but was able to find some workarounds to resolve them.
+    -Now I'm working on styling.
+    -If I'm able to accomplish the styling faster than expected, I might add another bonus feature (friending/unfriending/viewing friends).
+
 Tuesday 9/14: Resolve any remaining issues. Deploy to Heroku. Complete the README file. Prepare for presentation.
 
 ***PROJECT OUTLINE***
 An ACNH villager “Facebook” with details about all villagers, using this API: http://acnhapi.com/doc#tag/Villagers
 Include search functionality to find specific villagers by name. Include functionality to allow for filtering of results by species or personality type.  Include something in state that allows you to click on a villager’s card and “friend” them. Include something in state that shows your friends/residents on the page. Maybe call the app “ACNHBook” or “FaceNook”?
-
 
 leaf icon: https://lh4.googleusercontent.com/proxy/P_I1uVkx3sOaNlJWO8R7JsaX3uCkWJlhQ85phwR7deKrCXFIyBxVBIFjkWuYq2n0_LwE9AKekkrVGF0nT4Vex41AbA=s0-d
 
