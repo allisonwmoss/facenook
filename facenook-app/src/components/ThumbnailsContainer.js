@@ -26,6 +26,7 @@ const LoadingMessage = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+padding: 100px;
 `
 
 export default function ThumbnailsContainer(props) {
