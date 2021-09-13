@@ -27,14 +27,24 @@ export default function Thumbnail(props) {
     const villager = props.villager
     let backgroundColor = villager['bubble-color']
     let bubbleColor = backgroundColor;
+    //Resolve some issues where lack of contrast creates poor user experience:
     if (backgroundColor === '#ffffff') {
         backgroundColor = '#000000'
     }
-    console.log(bubbleColor)
+    if (backgroundColor === '#fff98f') {
+        backgroundColor = '#c9ab3c'
+        bubbleColor = '#c9ab3c'
+    }
+    if (backgroundColor === '#ffebff') {
+        backgroundColor = '#d669d6'
+        bubbleColor = '#d669d6'
+    }
+    //
     const bubbleStyle = {
         backgroundColor: backgroundColor,
         color: backgroundColor,
     }
+
     return (
         <Link to={{
             pathname: `/${villager.id}`,

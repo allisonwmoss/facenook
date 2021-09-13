@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import styled, { keyframes, withTheme } from 'styled-components'
-import Header from './Header'
 
 const ContainerDiv = styled.div`
     display: flex;
@@ -35,9 +34,19 @@ export default function VillagerDetail(props) {
         let cardColor = villager['bubble-color']
         let bubbleColor = '#ffffff';
         let textColor = cardColor;
+        //Resolve color contrast issues for better UX:
         if (cardColor === '#ffffff') {
             bubbleColor = '#000000'
         }
+        if (cardColor === '#fff98f') {
+            cardColor = '#c9ab3c'
+            textColor = '#c9ab3c'
+        }
+        if (cardColor === '#ffebff') {
+            cardColor = '#d669d6'
+            textColor = '#d669d6'
+        }
+        //
         const cardStyle = {
             backgroundColor: cardColor,
             color: textColor,
