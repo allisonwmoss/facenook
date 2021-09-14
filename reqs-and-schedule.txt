@@ -75,6 +75,7 @@ Implement any other stretch goals from proposal, if time allows (friending, unfr
 Tuesday 9/14:
 Add final touches to styling. x
 Make a clean commit, then explore adding a friending/unfriending/viewing friends mechanic. 
+Update favicon.
 Resolve any remaining issues. 
 Deploy to Heroku. 
 Complete the README file. 
@@ -83,3 +84,10 @@ Prepare for presentation.
 ***PROJECT OUTLINE***
 An ACNH villager “Facebook” with details about all villagers, using this API: http://acnhapi.com/doc#tag/Villagers
 Include search functionality to find specific villagers by name. Include functionality to allow for filtering of results by species or personality type.  Include something in state that allows you to click on a villager’s card and “friend” them. Include something in state that shows your friends/residents on the page. Maybe call the app “ACNHBook” or “FaceNook”?
+
+heroku app name: facenook90934
+
+Map this out:
+-Add a property to every villager object returned by the API call?
+    -Wait, no. That doesn't actually help. That isn't state. 
+    -Wait, yes it is. It is state. Because the villagers are themselves stored in state

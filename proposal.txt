@@ -27,14 +27,14 @@ App (makes the API call and saves the villagers to state)
 **User stories
 ***MVP
 ****As a user...
-- I want to be able to see a list of villagers and their icons.
-- I want to be able to view a details page for a specific villager which gives more detailed information about them.
-- I want to be able to navigate back to the landing view at any time.
-- I want to view an instructive, helpful error message on the page when something goes wrong. 
+- I want to be able to see a list of villagers and their icons. x
+- I want to be able to view a details page for a specific villager which gives more detailed information about them. x
+- I want to be able to navigate back to the landing view at any time. x
+- I want to view an instructive, helpful error message on the page when something goes wrong. x
 
 ***Post-MVP/Stretch
 ****As a user...
-- I want to be able to search for a specific villager by name and view that villager's details page.
+- I want to be able to search for a specific villager by name and view that villager's details page. x
 - I want to be able to "friend" and "unfriend" a villager using a button on their details page.
 - I want to be able to view all of my "friends" and their icons. 
 - I want to be able to use the app on mobile or on desktop. 
