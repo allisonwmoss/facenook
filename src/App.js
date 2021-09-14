@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "./components/Header";
 import { Route, Redirect } from 'react-router-dom'
-import ThumbnailsContainer from "./components/ThumbnailsContainer";
+import MainContainer from "./components/MainContainer";
 import VillagerDetail from './components/VillagerDetail';
 import Copyright from './components/Copyright';
 import './App.css'
@@ -11,7 +11,7 @@ function App() {
     <div>
       <Header></Header>
       {/* ----homepage----- */}
-      <Route exact path="/"> <ThumbnailsContainer /> </Route>
+      <Route exact path="/"> <MainContainer /> </Route>
       <Route exact path="/"> <Copyright /> </Route>
       {/* ----detail view----*/}
       <Route path="/:id" component={VillagerDetail} />

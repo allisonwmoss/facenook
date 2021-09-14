@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
+import FriendButton from './FriendButton'
 
 const thumbnailAnimation = keyframes`
 from{
@@ -34,7 +35,10 @@ background-color: white;
 padding: 5px;
 border-radius: 20%;
 font-size: 2em;
+margin: 10px;
 `
+
+
 
 export default function Thumbnail(props) {
     const villager = props.villager
@@ -65,7 +69,7 @@ export default function Thumbnail(props) {
             <ThumbnailDiv style={bubbleStyle}>
                 <img src={villager['icon_uri']} alt={villager.name['name-USen']} />
                 <VillagerName>{villager.name['name-USen']}</VillagerName>
-                {/* <p>{villager.isFriend}</p> */}
+                <FriendButton />
             </ThumbnailDiv>
         </Link>
     )
