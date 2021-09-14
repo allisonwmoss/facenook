@@ -65,7 +65,7 @@ export default function Thumbnail(props) {
             <ThumbnailDiv style={bubbleStyle}>
                 <img src={villager['icon_uri']} alt={villager.name['name-USen']} />
                 <VillagerName>{villager.name['name-USen']}</VillagerName>
-                <p>{villager.isFriend}</p>
+                {/* <p>{villager.isFriend}</p> */}
             </ThumbnailDiv>
         </Link>
     )
