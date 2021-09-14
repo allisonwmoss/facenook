@@ -30,13 +30,13 @@ It uses flexbox or CSS grid for layout and not floats. x
     It may incorporate a component library or styling framework. x
 
 Your project repository must adequately document your project and include a line to the deployed app. x
-    *Your Github repository must contain a brief description and link to the deployed application in the "website" section at the top of the Code tab.
+    *Your Github repository must contain a brief description and link to the deployed application in the "website" section at the top of the Code tab. x
     *Your Github repository must contain a README.md file for documentation that is properly formatted using Github flavored markdown.
     *Your Github repository README.md must include the following sections:
-        *Description: Describe at a high level what your project is and the motivation for the project (i.e., what problem(s) your projects solves) and includes a screenshot of the application in the browser.
-        *Technologies Used: A list of the languages, libraries and frameworks used in your application.
-        *Getting Started/Installation Instructions: This would likely describe how to use the application and the steps to fork, clone and run the application.
-        *Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
+        *Description: Describe at a high level what your project is and the motivation for the project (i.e., what problem(s) your projects solves) and includes a screenshot of the application in the browser. x
+        *Technologies Used: A list of the languages, libraries and frameworks used in your application. x
+        *Getting Started/Installation Instructions: This would likely describe how to use the application and the steps to fork, clone and run the application. x
+        *Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements. x
 
 You have used git for version control throughout the project. x
     *Your project must contain frequent, cohesive commits dating back to the first day of the project week. Aim for at least 30 commits. x
@@ -74,19 +74,19 @@ Implement any other stretch goals from proposal, if time allows (friending, unfr
 
 Tuesday 9/14:
 Add final touches to styling. x
-Make a clean commit, then explore adding a friending/unfriending/viewing friends mechanic. x
 Update favicon. x
 Resolve any remaining issues. 
 Deploy to Heroku. x
-Complete the README file. 
+Complete the README file. x
 Prepare for presentation.
+Make a clean commit, then explore adding a friending/unfriending/viewing friends mechanic. 
 
 STANDUP:
 -I finished my styling and I'm overall very happy with how it looks
--I got it deployed to Heroku
--Hit an issue that terrified me where my search form wasn't behaving correctly when deployed even though it still worked fine locally. Fortunately it was a very easy one-line fix
--Now I need to update the README file on github to the project specs and prepare for the presentation. 
--If time allows, I will implement an extra feature I started working on this morning. 
+-I got it deployed to Heroku and updated my README file according to project specs
+-Hit an issue that terrified me where my search form wasn't behaving correctly when deployed even though it still worked fine locally. Fortunately it was a very easy one-line fix.
+-Now I need to prepare for the presentation. 
+-If time allows, I will try to implement an extra feature I started working on this morning. 
 
 ***PROJECT OUTLINE***
 An ACNH villager “Facebook” with details about all villagers, using this API: http://acnhapi.com/doc#tag/Villagers
