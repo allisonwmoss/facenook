@@ -20,10 +20,10 @@ It must use at least 4 separate components. x
     It may use class-based components or hooks for stateful components. x
     *It must use stateless (function) and stateful (class) components appropriately. x
 
-It must be deployed to the Web.
-    *It must be accessible as an application on the Web. (see Deploying React Apps on Heroku)
-    *It must separately have a public GitHub repository containing your code.
-    *You must not commit your API keys to Github. (see Storing API Keys Outside of Github)
+It must be deployed to the Web. x
+    *It must be accessible as an application on the Web. (see Deploying React Apps on Heroku) x
+    *It must separately have a public GitHub repository containing your code. x
+    *You must not commit your API keys to Github. (see Storing API Keys Outside of Github) N/A
 
 It uses flexbox or CSS grid for layout and not floats. x
     *It must not use floats for layout or depend solely upon positioning elements with fixed or absolute position. x
@@ -74,18 +74,26 @@ Implement any other stretch goals from proposal, if time allows (friending, unfr
 
 Tuesday 9/14:
 Add final touches to styling. x
-Make a clean commit, then explore adding a friending/unfriending/viewing friends mechanic. 
-Update favicon.
+Make a clean commit, then explore adding a friending/unfriending/viewing friends mechanic. x
+Update favicon. x
 Resolve any remaining issues. 
-Deploy to Heroku. 
+Deploy to Heroku. x
 Complete the README file. 
 Prepare for presentation.
+
+STANDUP:
+-I finished my styling and I'm overall very happy with how it looks
+-I got it deployed to Heroku
+-Hit an issue that terrified me where my search form wasn't behaving correctly when deployed even though it still worked fine locally. Fortunately it was a very easy one-line fix
+-Now I need to update the README file on github to the project specs and prepare for the presentation. 
+-If time allows, I will implement an extra feature I started working on this morning. 
 
 ***PROJECT OUTLINE***
 An ACNH villager “Facebook” with details about all villagers, using this API: http://acnhapi.com/doc#tag/Villagers
 Include search functionality to find specific villagers by name. Include functionality to allow for filtering of results by species or personality type.  Include something in state that allows you to click on a villager’s card and “friend” them. Include something in state that shows your friends/residents on the page. Maybe call the app “ACNHBook” or “FaceNook”?
 
 heroku app name: facenook90934
+https://facenook90934.herokuapp.com/
 
 Map this out:
 -Add a property to every villager object returned by the API call?
