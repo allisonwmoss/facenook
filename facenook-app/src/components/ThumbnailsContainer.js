@@ -32,11 +32,38 @@ export default function ThumbnailsContainer() {
     const [isLoading, setLoading] = useState(true);
     const [villagers, setVillagers] = useState({})
     const [searchString, setSearchString] = useState('')
+    const [friends, setFriends] = useState([])
+    const [isFriend, setIsFriend] = useState(false)
 
     //See footnote 1---
     useEffect(() => {
         //See footnote 3---
         axios.get("https://acnhapi.com/v1/villagers/").then(response => {
+            // console.log(Object.values(response))
+            // const resp = Object.values(response)
+            // const resp2 = JSON.parse(resp)
+            // console.log(resp2)
+            // console.log(typeof resp)
+            // console.log(resp[0])
+            // const respArr = resp[0]
+            // console.log(respArr)
+            // console.log(typeof respArr)
+
+            // const friendedArr = respArr.map(villager => ({
+            //     ...villager,
+            //     isFriend: false
+            // }))
+            // console.log(friendedArr)
+
+            // setVillagers(friendedArr)
+            // console.log(villagers)
+
+            // const valuesArr = Object.values(villagers)
+            // const friendedArr = valuesArr.map(villager => ({
+            //     ...villager,
+            //     isFriend: false
+            // }))
+            // setVillagers(friendedArr)
             setVillagers(response.data)
             setLoading(false)
         })
@@ -67,7 +94,13 @@ export default function ThumbnailsContainer() {
     return (
         <div>
             <SearchForm searchString={searchString} setSearchString={setSearchString} villagers={villagers} />
-            <AllThumbnails villagers={villagers} />
+            <AllThumbnails
+                villagers={villagers}
+                friends={friends}
+                setFriends={setFriends}
+                isFriend={isFriend}
+                setIsFriend={setIsFriend}
+            />
         </div>
     )
     //--------

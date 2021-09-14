@@ -59,13 +59,13 @@ export default function Thumbnail(props) {
         <Link to={{
             pathname: `/${villager.id}`,
             state: {
-                villager: { villager },
-                homepageVillagers: props.thumbnailVillagers
+                villager: { villager }
             }
         }}>
             <ThumbnailDiv style={bubbleStyle}>
                 <img src={villager['icon_uri']} alt={villager.name['name-USen']} />
                 <VillagerName>{villager.name['name-USen']}</VillagerName>
+                <p>{villager.isFriend}</p>
             </ThumbnailDiv>
         </Link>
     )
