@@ -10,14 +10,11 @@ const VillagerDiv = styled.div`
     margin: 50px;
     min-width: 850px;
     border-radius: 10%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 `
 
 const VillagerImg = styled.img`
     flex-grow: 1;
-    /* width: 40%;
-    height: 40%; */
-    /* max-width: 50%;
-    max-height: 50%; */
     margin: 5%;
     border: 50px solid white;
 `

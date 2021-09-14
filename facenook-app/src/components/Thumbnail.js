@@ -1,6 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const thumbnailAnimation = keyframes`
+from{
+    transform: translateY(0px)
+} to {
+    transform: translateY(-10px)
+}
+`
 
 const ThumbnailDiv = styled.div`
 display: flex;
@@ -14,6 +22,11 @@ width: 180px;
 padding: 5px;
 margin: 15px;
 color: white;
+//See footnote 5----
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+&:hover{
+        animation: ${thumbnailAnimation} 0.3s;
+    }
 `
 
 const VillagerName = styled.h3`

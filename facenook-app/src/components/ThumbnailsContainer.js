@@ -7,6 +7,7 @@ import SearchForm from './SearchForm';
 import SearchResult from './SearchResult';
 const axios = require('axios').default
 
+//Loading effect while the API response comes back----
 const LoadingBeachballEffect = keyframes`
      from {
          transform: rotate(0deg)
@@ -15,21 +16,19 @@ const LoadingBeachballEffect = keyframes`
          transform: rotate(360deg)
     }
 `
-
 const LoadingBeachball = styled.img`
 animation: ${LoadingBeachballEffect} 2s infinite;
 width: 30%;
 height: 30%;
 `
-
 const LoadingMessage = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
 padding: 100px;
 `
-
-export default function ThumbnailsContainer(props) {
+//-------
+export default function ThumbnailsContainer() {
 
     const [isLoading, setLoading] = useState(true);
     const [villagers, setVillagers] = useState({})

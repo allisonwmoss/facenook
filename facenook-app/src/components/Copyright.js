@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CopyrightBlock = styled.div`
-    margin: 10px;
+    margin: 50px;
+    text-align: center;
 `
 
 export default function Copyright() {

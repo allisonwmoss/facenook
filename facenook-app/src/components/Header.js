@@ -15,27 +15,35 @@ const HeaderDiv = styled.div`
     width: 100%;
 `
 
-// const HeaderLogo = styled.div`
-// max-width: 200px;
-// min-width: 100px;
-// margin: 0px 50px;
-// padding: 5px;
-// background-image: url("https://i.imgur.com/286VAPQ.png");
-// `
-
-const Img = styled.img`
-max-width: 200px;
-margin: 0px 50px;
-padding: 5px;
+const HeaderLogo = styled.div`
+width: 150px;
+height: 150px;
+max-height: 400px;
+color: #003413;
+background-image: url("https://i.imgur.com/286VAPQ.png");
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.55em;
+border: 5px solid transparent;
+border-radius: 50%;
+&:hover{
+        transition: 0.1s ease-in;
+        background-image: url("https://i.imgur.com/lnrCkrf.png");
+        color: white;
+    }
 `
 
 export default function Header() {
     return (
         <Link to={'/redirect'}>
             <HeaderDiv>
-                {/* <HeaderLogo>facenook</HeaderLogo> */}
-                <h1>facenook</h1>
-                <Img src="https://i.imgur.com/286VAPQ.png" />
+                <HeaderLogo>
+                    <h1>facenook</h1>
+                </HeaderLogo>
             </HeaderDiv>
         </Link>
 

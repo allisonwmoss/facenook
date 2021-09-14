@@ -1,51 +1,45 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledForm = styled.form`
-    padding: 10px;
     font-size: 1.3em;
     display: flex;
     flex-direction: row;
-    align-items:flex-end;
-    justify-content:space-between;
+    align-items: center;
+    justify-content:center;
     background-color: #eb0081;
 `
 
-const StyledButton = styled.button`
-    background-color: #00adef;
+const StyledButton = styled.div`
+    background-image: url('https://i.imgur.com/7vA2Zt8.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
     font-size: 1em;
-    height: 1.3em;
-    width: 20%;
+    height: 70px;
+    width: 70px;
     margin: 5px;
+    border-radius: 50%;
     color: white;
-    border: 1px solid #00adef;
-    border-radius: 8%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &:hover{
         background-color: #5ce1e6;
+        transition: 0.1s ease-in;
     }
 `
 
 const StyledInput = styled.input`
-    height: 1.8em;
-    width: 75%;
+    height: 2em;
+    width: 50%;
     margin: 5px;
-`
-
-const StyledLabel = styled.label`
-margin: 5px;
-width: 20%;
+    font-size: 0.9em;
+    border: 1px solid white;
 `
 
 export default function SearchForm(props) {
-    const searchString = props.searchString
+    // const searchString = props.searchString
     const setSearchString = props.setSearchString
     const [waitSearchString, setWaitSearchString] = useState('')
-    const villagers = props.villagers
+    // const villagers = props.villagers
 
     function handleChange(e) {
         setWaitSearchString(e.target.value)
@@ -56,26 +50,14 @@ export default function SearchForm(props) {
     }
     return (
         <StyledForm>
-            <StyledLabel
-                htmlFor="search-input">Find a villager
-            </StyledLabel>
             <StyledInput
-                type="text" value={waitSearchString} onChange={e => handleChange(e)} id="search-input">
+                type="text" value={waitSearchString} placeholder='Search for a villager...' onChange={e => handleChange(e)} id="search-input">
 
             </StyledInput>
-            {/* <Link to="/search" onClick={e => handleSubmit(e)}>Search */}
             <StyledButton
                 onClick={e => handleSubmit(e)}>
-                search
             </StyledButton>
-            {/* </Link> */}
         </StyledForm>
 
     )
 }
-
-
-//What do i need to do?
-//take the search string I received as props
-//find the object in the villager JSON data that has that name
-//return that villager as a thumbnail
