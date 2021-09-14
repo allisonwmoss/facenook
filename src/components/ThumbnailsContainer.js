@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import Error from './Error';
 import SearchForm from './SearchForm';
 import SearchResult from './SearchResult';
+import FriendsList from './FriendsList';
 const axios = require('axios').default
 
 //Loading effect while the API response comes back----
@@ -25,6 +26,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 100px;
+`
+
+const Container = styled.div`
+display: flex;
+flex-direction: row;
 `
 //-------
 export default function ThumbnailsContainer() {
@@ -92,16 +98,20 @@ export default function ThumbnailsContainer() {
     }
 
     return (
-        <div>
-            <SearchForm searchString={searchString} setSearchString={setSearchString} villagers={villagers} />
-            <AllThumbnails
-                villagers={villagers}
-                friends={friends}
-                setFriends={setFriends}
-                isFriend={isFriend}
-                setIsFriend={setIsFriend}
-            />
-        </div>
+        <Container>
+            <FriendsList />
+            <div>
+                <SearchForm searchString={searchString} setSearchString={setSearchString} villagers={villagers} />
+                <AllThumbnails
+                    villagers={villagers}
+                    friends={friends}
+                    setFriends={setFriends}
+                    isFriend={isFriend}
+                    setIsFriend={setIsFriend}
+                />
+            </div>
+
+        </Container>
     )
     //--------
 
