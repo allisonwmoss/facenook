@@ -47,7 +47,7 @@ export default function SearchForm(props) {
         setSearchString(waitSearchString)
     }
     return (
-        <StyledForm>
+        <StyledForm onSubmit={e => handleSubmit(e)}>
             <StyledInput
                 type="text" value={waitSearchString} placeholder='Search for a villager...' onChange={e => handleChange(e)} id="search-input">
 
