@@ -1,3 +1,8 @@
+//--------------FACENOOK:--------------------
+//-----We dare to ask, "What if the Animal Crossing universe had a social media site?"-----
+//Please see Footnotes.txt for citations and attribution.
+//Animal Crossing copyright 2001-2021, Nintendo.
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

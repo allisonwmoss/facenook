@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Thumbnail from './Thumbnail'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const ThumbnailsDiv = styled.div`
@@ -29,6 +28,7 @@ export default function AllThumbnails(props) {
             newThumbnailVillagers.push(matchingVillager)
         }
         setThumbnailVillagers(newThumbnailVillagers)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

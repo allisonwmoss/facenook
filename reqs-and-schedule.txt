@@ -1,35 +1,35 @@
 ***REQS***
 
 Your app must be a working, interactive, React application.
-    *It must only use React for DOM manipulation.
-    *It must not produce errors or console logs when used.
-    *It must not display any non-functional actions (e.g., buttons or links that do not work).
-    *It must not be dependent upon or cause the page to refresh (it must be an SPA).
-    *It must include at least two interactive features (e.g., the user can switch views to see more detail).
-    *It must not contain any JavaScript alerts.
-    It should be free from extraneous create-react-app files or code. Specifically, you should remove the preloaded logo.svg and unused App.css style declarations.
+    *It must only use React for DOM manipulation. x
+    *It must not produce errors or console logs when used. x
+    *It must not display any non-functional actions (e.g., buttons or links that do not work). x
+    *It must not be dependent upon or cause the page to refresh (it must be an SPA). x
+    *It must include at least two interactive features (e.g., the user can switch views to see more detail). x
+    *It must not contain any JavaScript alerts. x
+    It should be free from extraneous create-react-app files or code. Specifically, you should remove the preloaded logo.svg and unused App.css style declarations. x
 
-It must include data from a third-party API.
-    *It must contain at least one request to an API.
-    *You must use an environment variable to store any API keys if keys are required to make requests to the API you choose. (see Storing API Keys Outside of Github)
-    *Your API requests must be made over https. Not all APIs support https (most do). Make sure that the API you use has a url that begins with https:// not http://. Read about why
-    *Each request must handle errors by displaying a message to the user and must not log the error to the console.
-    *The data returned from the API must be used in the application.
+It must include data from a third-party API. x
+    *It must contain at least one request to an API. x
+    *You must use an environment variable to store any API keys if keys are required to make requests to the API you choose. (see Storing API Keys Outside of Github) N/A
+    *Your API requests must be made over https. Not all APIs support https (most do). Make sure that the API you use has a url that begins with https:// not http://. Read about why x
+    *Each request must handle errors by displaying a message to the user and must not log the error to the console. x
+    *The data returned from the API must be used in the application. x
 
-It must use at least 4 separate components.
-    It may use class-based components or hooks for stateful components.
-    *It must use stateless (function) and stateful (class) components appropriately.
+It must use at least 4 separate components. x
+    It may use class-based components or hooks for stateful components. x
+    *It must use stateless (function) and stateful (class) components appropriately. x
 
 It must be deployed to the Web.
     *It must be accessible as an application on the Web. (see Deploying React Apps on Heroku)
     *It must separately have a public GitHub repository containing your code.
     *You must not commit your API keys to Github. (see Storing API Keys Outside of Github)
 
-It uses flexbox or CSS grid for layout and not floats.
-    *It must not use floats for layout or depend solely upon positioning elements with fixed or absolute position.
-    It may incorporate a component library or styling framework.
+It uses flexbox or CSS grid for layout and not floats. x
+    *It must not use floats for layout or depend solely upon positioning elements with fixed or absolute position. x
+    It may incorporate a component library or styling framework. x
 
-Your project repository must adequately document your project and include a line to the deployed app.
+Your project repository must adequately document your project and include a line to the deployed app. x
     *Your Github repository must contain a brief description and link to the deployed application in the "website" section at the top of the Code tab.
     *Your Github repository must contain a README.md file for documentation that is properly formatted using Github flavored markdown.
     *Your Github repository README.md must include the following sections:
@@ -38,12 +38,12 @@ Your project repository must adequately document your project and include a line
         *Getting Started/Installation Instructions: This would likely describe how to use the application and the steps to fork, clone and run the application.
         *Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
 
-You have used git for version control throughout the project.
-    *Your project must contain frequent, cohesive commits dating back to the first day of the project week. Aim for at least 30 commits.
+You have used git for version control throughout the project. x
+    *Your project must contain frequent, cohesive commits dating back to the first day of the project week. Aim for at least 30 commits. x
 
-Use React Router for navigation (as needed).
-    If your app has navigation features, it must use React Router for the navigation.
-    It should not depend solely on the browser's navigation buttons.
+Use React Router for navigation (as needed). x
+    If your app has navigation features, it must use React Router for the navigation. x
+    It should not depend solely on the browser's navigation buttons. x
 
 ***SCHEDULE***
 
@@ -70,13 +70,16 @@ Create search capability to find specific villagers by name. x
 
 Monday 9/13:
 Add styling. x
-Implement any other stretch goals from proposal, if time allows (friending, unfriending, viewing friends).
+Implement any other stretch goals from proposal, if time allows (friending, unfriending, viewing friends). >
 
-Tuesday 9/14: Resolve any remaining issues. Deploy to Heroku. Complete the README file. Prepare for presentation.
+Tuesday 9/14:
+Add final touches to styling. x
+Make a clean commit, then explore adding a friending/unfriending/viewing friends mechanic. 
+Resolve any remaining issues. 
+Deploy to Heroku. 
+Complete the README file. 
+Prepare for presentation.
 
 ***PROJECT OUTLINE***
 An ACNH villager “Facebook” with details about all villagers, using this API: http://acnhapi.com/doc#tag/Villagers
 Include search functionality to find specific villagers by name. Include functionality to allow for filtering of results by species or personality type.  Include something in state that allows you to click on a villager’s card and “friend” them. Include something in state that shows your friends/residents on the page. Maybe call the app “ACNHBook” or “FaceNook”?
-
-leaf icon: https://lh4.googleusercontent.com/proxy/P_I1uVkx3sOaNlJWO8R7JsaX3uCkWJlhQ85phwR7deKrCXFIyBxVBIFjkWuYq2n0_LwE9AKekkrVGF0nT4Vex41AbA=s0-d
-

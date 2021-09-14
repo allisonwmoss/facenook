@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Route } from 'react-router-dom'
 import AllThumbnails from './allThumbnails';
 import styled, { keyframes } from 'styled-components'
 import Error from './Error';

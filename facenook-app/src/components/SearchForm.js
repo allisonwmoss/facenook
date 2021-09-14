@@ -36,10 +36,8 @@ const StyledInput = styled.input`
 `
 
 export default function SearchForm(props) {
-    // const searchString = props.searchString
     const setSearchString = props.setSearchString
     const [waitSearchString, setWaitSearchString] = useState('')
-    // const villagers = props.villagers
 
     function handleChange(e) {
         setWaitSearchString(e.target.value)

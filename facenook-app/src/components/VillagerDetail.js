@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import styled, { keyframes, withTheme } from 'styled-components'
+import React from 'react'
+import styled from 'styled-components'
 
 const VillagerDiv = styled.div`
     display: flex;
@@ -76,14 +76,11 @@ export default function VillagerDetail(props) {
             alignItems: 'center',
             margin: '3% 0%',
             flexGrow: '1',
-            // fontSize: '0.8em',
         }
         return (
             <div>
-                {/* <ContainerDiv> */}
                 <VillagerDiv
-                    style={cardStyle}
-                >
+                    style={cardStyle}>
                     <div style={elemStyle}>
                         <VillagerImg src={villager['image_uri']} alt={villager.name['name-USen']} />
                         <div style={nameStyle}>
@@ -92,10 +89,6 @@ export default function VillagerDetail(props) {
                         </div>
                     </div>
                     <VillagerInfoBox>
-                        {/* <div style={rowStyle}>
-                            <h1 style={elemStyle}>{villager.name['name-USen']}</h1>
-                            <h2 style={elemStyle}><em>{villager.species}</em></h2>
-                        </div> */}
                         <div style={rowStyle}>
                             <div style={elemStyle}>
                                 <h2>Birthday</h2>
@@ -121,12 +114,9 @@ export default function VillagerDetail(props) {
                                 <h2>Quote</h2>
                                 <h3><em>"{villager.saying}"</em></h3>
                             </div>
-
                         </div>
                     </VillagerInfoBox>
-                    {/* </div> */}
                 </VillagerDiv >
-                {/* </ContainerDiv> */}
             </div>
         )
     }
